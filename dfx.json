@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "hello_bachelor_rust_backend": {
+      "candid": "src/hello_bachelor_rust_backend/hello_bachelor_rust_backend.did",
+      "package": "hello_bachelor_rust_backend",
+      "type": "rust"
+    },
+    "hello_bachelor_rust_frontend": {
+      "dependencies": [
+        "hello_bachelor_rust_backend"
+      ],
+      "source": [
+        "src/hello_bachelor_rust_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hello_bachelor_rust_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
