@@ -26,6 +26,12 @@ dfx canister --help
 If you want to test your project locally, you can use the following commands:
 
 ```bash
+#Build frontend first
+cd src/hello_bachelor_rust_frontend
+npm install
+npm run build
+cd ../..
+```
 # Starts the replica, running in the background
 dfx start --background
 
